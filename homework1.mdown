@@ -1,5 +1,3 @@
-# GetExperiencedBootcamp
-Bootcamp designed to create real world team experience
 Homework questions
 
 The theme for these question is definitions.  You have to know what the things are before you can use them.  
@@ -108,16 +106,11 @@ The Model is the representation of the data not the actual data but an interface
 The View is what you actually see. It’s the presentation layer for your model. On the computer the view would be what you see in your browser or for a desktop app its your UI. The view also provides and interface to collect user input.
 
 The Controller is what controls the flow between the model and the view. It uses programmed logic to decide what information is pulled from the database via the model and what information is passed to the view. It also gets information fron the user via the view and implements business logic: either by changing the view, or modifying the data through the model or both.
-
-
-
-
-
-
-
-
-
-
+ 
+<p align="center">
+  <img src="Homework1-mvc .png" width="350"/>
+  
+</p>
 
 
 1	User Input.
@@ -125,3 +118,13 @@ The Controller is what controls the flow between the model and the view. It uses
 3	Get response of command from the model
 4	Selects a template to display the results to the user requests
 5	Response back to the user
+
+
+
+
+
+
+
+
+
+
