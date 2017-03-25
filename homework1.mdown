@@ -120,7 +120,44 @@ The Controller is what controls the flow between the model and the view. It uses
 5	Response back to the user
 
 
+Model
 
+public class BankAccount
+{
+     public int ID;
+     public int Balance;
+
+     public BankAccount(int id)
+     {
+         ID = id;
+         Balance = DetermineAmount();
+     }
+
+     public int DetermineAmount()
+     {
+         // Gather transaction info, debits, credits and return a
+         // sum of the amount left in the account depending on the
+         // id provided.
+     }
+}
+Controller
+
+    public class BankAccountController
+    {
+
+         public ViewResult Index(int id)
+         {
+             BankAccount account = new BankAccount(id);
+             return View(account);
+         }
+
+    }
+View
+
+<ul id="account-info">
+   <li>Account ID: `@Model.ID`</li>    
+   <li>Balance: `@Model.Balance`</li>
+</ul>
 
 
 
